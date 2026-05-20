@@ -1,3 +1,66 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// ========================================
+// Goeun's Tech Blog — Custom Styles
+// ========================================
+
+// --- Profile Section (sidebar) ---
+.page-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+// --- Explorer (sidebar navigation) ---
+.explorer {
+  h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+  }
+}
+
+// --- Content area ---
+article {
+  h1 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h2,
+  h3 {
+    font-weight: 600;
+  }
+}
+
+// --- Tag pills ---
+a.tag-link {
+  border-radius: 9999px;
+  padding: 0.15em 0.6em;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+// --- Code blocks ---
+pre {
+  border-radius: 8px;
+}
+
+// --- Footer ---
+footer {
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+
+// --- Smooth transitions ---
+a {
+  transition: color 0.2s ease;
+}
+
+// --- Dark mode sidebar accent ---
+:root[saved-theme="dark"] {
+  .left-sidebar {
+    border-right: 1px solid var(--lightgray);
+  }
+}
